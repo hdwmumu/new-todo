@@ -1,0 +1,39 @@
+.TodoItem {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 1px rgb(191, 198, 191);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  cursor: pointer;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+/*svg =>체크박스 모양 아이콘*/
+.content svg {
+  font-size: 1.5rem;
+  color: rgb(149, 172, 141);
+}
+
+.content .text {
+  margin-left: .5rem;
+  flex: 1;
+  color: rgb(103, 117, 98);
+}
+
+/*해당 컨텐츠에 체크가 되어있을 경우*/
+
+.content.checked .text {
+  color:  rgb(103, 117, 98);
+  text-decoration: line-through;
+  cursor: pointer;
+  opacity: 0.5;
+}
